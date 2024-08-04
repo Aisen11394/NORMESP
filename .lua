@@ -1,3 +1,4 @@
+---@vars
 local runService = game:GetService('RunService')
 local coregui = game:GetService('CoreGui')
 local players = game:GetService('Players')
@@ -5,20 +6,23 @@ local localPlayer = players.LocalPlayer
 local camera = workspace.CurrentCamera
 
 local esp = {
-    enabled = true,
-    teamcheck = false,
+    -- settings
+    enabled = false,
+    teamcheck = true,
     visiblecheck = false,
     outlines = true,
     limitdistance = false,
     shortnames = false,
 
-    maxchar = 8,
+    maxchar = 4,
     maxdistance = 1200,
     fadefactor = 20,
     arrowradius = 500,
     arrowsize = 20,
-    arrowinfo = true,
+    arrowinfo = false,
 
+    -- instances
+    --\ @teammates
     team_chams = { false, Color3.new(1, 1, 1), Color3.new(1, 1, 1), .25, .75, true },
     --
     team_boxes = { false, Color3.new(), Color3.new(), 0.95 },
@@ -32,30 +36,30 @@ local esp = {
     team_health = false,
 
     --\ @enemies
-    enemy_chams = { true, Color3.new(1, 1, 1), Color3.new(1, 1, 1), .25, .75, true },
+    enemy_chams = { false, Color3.new(1, 1, 1), Color3.new(1, 1, 1), .25, .75, true },
     --
-    enemy_boxes = { true, Color3.new(), Color3.new(), 0.95 },
+    enemy_boxes = { false, Color3.new(), Color3.new(), 0.95 },
     enemy_healthbar = { false, Color3.new(), Color3.new() },
-    enemy_kevlarbar = { true, Color3.new(), Color3.new() },
-    enemy_arrow = { true, Color3.new(), 0.5 },
+    enemy_kevlarbar = { false, Color3.new(), Color3.new() },
+    enemy_arrow = { false, Color3.new(), 0.5 },
     --
-    enemy_names = { true, Color3.new()},
-    enemy_weapon = { true, Color3.new()},
-    enemy_distance = true,
-    enemy_health = true,
+    enemy_names = { false, Color3.new()},
+    enemy_weapon = { false, Color3.new()},
+    enemy_distance = false,
+    enemy_health = false,
 
     --\ @priority
-    priority_chams = { true, Color3.new(1, 1, 1), Color3.new(1, 1, 1), .25, .75, true },
+    priority_chams = { false, Color3.new(1, 1, 1), Color3.new(1, 1, 1), .25, .75, true },
     --
-    priority_boxes = { true, Color3.new(), Color3.new(), 0.95 },
-    priority_healthbar = { true, Color3.new(), Color3.new() },
-    priority_kevlarbar = { true, Color3.new(), Color3.new() },
-    priority_arrow = { true, Color3.new(), 0.5 },
+    priority_boxes = { false, Color3.new(), Color3.new(), 0.95 },
+    priority_healthbar = { false, Color3.new(), Color3.new() },
+    priority_kevlarbar = { false, Color3.new(), Color3.new() },
+    priority_arrow = { false, Color3.new(), 0.5 },
     --
-    priority_names = { true, Color3.new()},
-    priority_weapon = { true, Color3.new()},
-    priority_distance = true,
-    priority_health = true,
+    priority_names = { false, Color3.new()},
+    priority_weapon = { false, Color3.new()},
+    priority_distance = false,
+    priority_health = false,
 
     font = 'Plex',
     textsize = 13,
