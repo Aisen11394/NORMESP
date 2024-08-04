@@ -5,7 +5,7 @@ local localPlayer = players.LocalPlayer
 local camera = workspace.CurrentCamera
 
 local esp = {
-    enabled = false,
+    enabled = true,
     teamcheck = true,
     visiblecheck = false,
     outlines = true,
