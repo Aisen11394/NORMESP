@@ -14,7 +14,7 @@ local esp = {
     limitdistance = false,
     shortnames = false,
 
-    maxchar = 100,
+    maxchar = 9,
     maxdistance = 1200,
     fadefactor = 20,
     arrowradius = 500,
