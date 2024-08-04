@@ -9,12 +9,12 @@ local esp = {
     -- settings
     enabled = false,
     teamcheck = true,
-    visiblecheck = false,
+    visiblecheck = true,
     outlines = true,
     limitdistance = false,
     shortnames = false,
 
-    maxchar = 4,
+    maxchar = 100,
     maxdistance = 1200,
     fadefactor = 20,
     arrowradius = 500,
