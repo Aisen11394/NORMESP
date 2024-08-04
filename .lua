@@ -32,30 +32,30 @@ local esp = {
     team_health = false,
 
     --\ @enemies
-    enemy_chams = { false, Color3.new(1, 1, 1), Color3.new(1, 1, 1), .25, .75, true },
+    enemy_chams = { true, Color3.new(1, 1, 1), Color3.new(1, 1, 1), .25, .75, true },
     --
-    enemy_boxes = { false, Color3.new(), Color3.new(), 0.95 },
-    enemy_healthbar = { false, Color3.new(), Color3.new() },
-    enemy_kevlarbar = { false, Color3.new(), Color3.new() },
-    enemy_arrow = { false, Color3.new(), 0.5 },
+    enemy_boxes = { true, Color3.new(), Color3.new(), 0.95 },
+    enemy_healthbar = { true, Color3.new(), Color3.new() },
+    enemy_kevlarbar = { true, Color3.new(), Color3.new() },
+    enemy_arrow = { true, Color3.new(), 0.5 },
     --
-    enemy_names = { false, Color3.new()},
-    enemy_weapon = { false, Color3.new()},
-    enemy_distance = false,
-    enemy_health = false,
+    enemy_names = { true, Color3.new()},
+    enemy_weapon = { true, Color3.new()},
+    enemy_distance = true,
+    enemy_health = true,
 
     --\ @priority
-    priority_chams = { false, Color3.new(1, 1, 1), Color3.new(1, 1, 1), .25, .75, true },
+    priority_chams = { true, Color3.new(1, 1, 1), Color3.new(1, 1, 1), .25, .75, true },
     --
-    priority_boxes = { false, Color3.new(), Color3.new(), 0.95 },
-    priority_healthbar = { false, Color3.new(), Color3.new() },
-    priority_kevlarbar = { false, Color3.new(), Color3.new() },
-    priority_arrow = { false, Color3.new(), 0.5 },
+    priority_boxes = { true, Color3.new(), Color3.new(), 0.95 },
+    priority_healthbar = { true, Color3.new(), Color3.new() },
+    priority_kevlarbar = { true, Color3.new(), Color3.new() },
+    priority_arrow = { true, Color3.new(), 0.5 },
     --
-    priority_names = { false, Color3.new()},
-    priority_weapon = { false, Color3.new()},
-    priority_distance = false,
-    priority_health = false,
+    priority_names = { true, Color3.new()},
+    priority_weapon = { true, Color3.new()},
+    priority_distance = true,
+    priority_health = true,
 
     font = 'Plex',
     textsize = 13,
