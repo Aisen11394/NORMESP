@@ -6,7 +6,7 @@ local camera = workspace.CurrentCamera
 
 local esp = {
     enabled = true,
-    teamcheck = true,
+    teamcheck = false,
     visiblecheck = false,
     outlines = true,
     limitdistance = false,
@@ -35,7 +35,7 @@ local esp = {
     enemy_chams = { true, Color3.new(1, 1, 1), Color3.new(1, 1, 1), .25, .75, true },
     --
     enemy_boxes = { true, Color3.new(), Color3.new(), 0.95 },
-    enemy_healthbar = { true, Color3.new(), Color3.new() },
+    enemy_healthbar = { false, Color3.new(), Color3.new() },
     enemy_kevlarbar = { true, Color3.new(), Color3.new() },
     enemy_arrow = { true, Color3.new(), 0.5 },
     --
