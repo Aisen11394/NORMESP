@@ -8,13 +8,13 @@ local camera = workspace.CurrentCamera
 local esp = {
     -- settings
     enabled = false,
-    teamcheck = true,
+    teamcheck = false,
     visiblecheck = true,
     outlines = true,
     limitdistance = false,
     shortnames = false,
 
-    maxchar = 9,
+    maxchar = 8,
     maxdistance = 1200,
     fadefactor = 20,
     arrowradius = 500,
